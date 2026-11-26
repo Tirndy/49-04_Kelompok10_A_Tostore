@@ -1,9 +1,253 @@
-@import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+.brand-page {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.brand-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.brand-page-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 6px;
+}
+
+.brand-page-header p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.brand-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.brand-btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.brand-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.brand-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.brand-card-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 5px;
+}
+
+.brand-card-header p {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.brand-total {
+    padding: 7px 12px;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.brand-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.brand-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.brand-table thead {
+    background: #f9fafb;
+}
+
+.brand-table th {
+    padding: 16px 18px;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.brand-table td {
+    padding: 16px 18px;
+    color: #4b5563;
+    font-size: 13px;
+    border-top: 1px solid #f0f1f4;
+    vertical-align: middle;
+}
+
+.brand-table tbody tr:hover {
+    background: #fafbff;
+}
+
+.brand-name {
+    color: #172033 !important;
+    font-weight: 600;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.brand-logo-placeholder {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.brand-status {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.brand-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.brand-status.inactive {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.brand-action-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-action-group form {
+    margin: 0;
+}
+
+.brand-btn-edit,
+.brand-btn-delete {
+    padding: 7px 11px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.brand-btn-edit {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.brand-btn-edit:hover {
+    background: #dbeafe;
+}
+
+.brand-btn-delete {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.brand-btn-delete:hover {
+    background: #fee2e2;
+}
+
+.brand-empty {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.brand-empty h3 {
+    font-size: 17px;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.brand-empty p {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.brand-alert-success {
+    padding: 13px 16px;
+    margin-bottom: 20px;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    color: #15803d;
+    font-size: 13px;
+}
+
+.brand-pagination {
+    padding: 18px 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+    .brand-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .brand-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .brand-table {
+        min-width: 850px;
+    }
 }

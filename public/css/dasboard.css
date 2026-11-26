@@ -1,5 +1,4 @@
 
-/* DASHBOARD TOSTORE */
 
 .dashboard-welcome {
     margin-bottom: 28px;
@@ -15,8 +14,6 @@
     color: #718096;
     font-size: 14px;
 }
-
-/* Statistik */
 
 .dashboard-stats {
     display: grid;
@@ -42,8 +39,6 @@
     font-size: 30px;
     font-weight: 700;
 }
-
-/* Tabel produk terbaru */
 
 .dashboard-table {
     background: white;

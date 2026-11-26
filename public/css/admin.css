@@ -1,8 +1,4 @@
 
-/* ===================================
-   TOSTORE - ADMIN GLOBAL CSS
-=================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -31,8 +27,6 @@ textarea {
 button {
     cursor: pointer;
 }
-
-/* LAYOUT */
 
 .min-h-screen {
     min-height: 100vh;
@@ -82,8 +76,6 @@ main > .page-content {
     padding: 32px;
 }
 
-/* SIDEBAR */
-
 aside > div:first-child {
     padding: 25px 22px;
     border-bottom: 1px solid #293244;
@@ -130,9 +122,9 @@ aside > div:last-child {
     border-top: 1px solid #293244;
 }
 
-/* GENERAL COMPONENTS */
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #172033;
 }
 
@@ -168,8 +160,6 @@ button:disabled {
     opacity: .5;
     cursor: not-allowed;
 }
-
-/* NOTIFICATION */
 
 main > .page-content > div:has(> ul) {
     color: #b91c1c;
